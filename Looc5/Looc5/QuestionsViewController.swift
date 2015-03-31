@@ -31,6 +31,33 @@ class QuestionViewController : UIViewController {
     @IBOutlet weak var answerFiveText: UIButton!
     
     
+    // var QuestionsArray:(Array<Dictionary<String, AnyObject>>)! = []
+    
+    
+    
+    /*
+    if let questionPlistPath = NSBundle.mainBundle().pathForResource("Heros", ofType: "plist") {
+        //println(heroPlistPath)
+        if let questionPlistData = NSData(contentsOfFile: questionPlistPath) {
+            if let questionRosterArray =  NSPropertyListSerialization.propertyListWithData(heroPlistData, options: NSPropertyListReadOptions(), format: nil, error: nil) as? Array<Dictionary<String, AnyObject>> {
+                //println(heroRosterArray)
+                self.questionRosterArray = heroRosterArray
+                
+            }
+        }
+    }
+*/
+   // var text1 = questionText.text
+    
+   // text1.text = QuestionsArray["Name"] as? String ?? "MissingNo."
+    
+ 
+    
+    
+    
+    
+    
+    
     
     @IBAction func answerOneButton(sender: UIButton) {
         answerOneText.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
@@ -46,13 +73,14 @@ class QuestionViewController : UIViewController {
     @IBAction func answerThreeButton(sender: UIButton) {
         answerThreeText.setTitleColor(UIColor.greenColor(), forState: UIControlState.Normal)
         var bonustime = time.text!.toInt()
-        
         var result = 1000 + (10 * Int(bonustime!))
-        
-        
         score.text = "\(result)"
-        
         timer.invalidate()
+        
+        
+        if let questionsPlistPath = NSBundle.mainBundle().pathForResource("Questions", ofType: "plist") {
+            println(questionsPlistPath)
+        }
         
         
     }
