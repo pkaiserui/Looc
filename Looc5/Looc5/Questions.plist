@@ -3,7 +3,7 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>Title 0</key>
+		<key>PictureName</key>
 		<string>Picture Name 1</string>
 		<key>Picture URL</key>
 		<string>http://nlcenters.org/wp-content/uploads/2014/07/Superman1.jpg</string>

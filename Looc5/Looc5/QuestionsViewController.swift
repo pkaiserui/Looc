@@ -31,7 +31,7 @@ class QuestionViewController : UIViewController {
     @IBOutlet weak var answerFiveText: UIButton!
     
     
-
+    var questionRosterArray:(Array<Dictionary<String, AnyObject>>)! = []
     
     
     
@@ -41,6 +41,11 @@ class QuestionViewController : UIViewController {
     
     @IBAction func answerOneButton(sender: UIButton) {
         answerOneText.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
+        
+        //NSDictionary *section1 = [sectionDictionary objectForKey:@"Section1"];
+        //questionText.text = "\(questionRosterArray[1] <String:>())"
+        
+      
     }
     
     
@@ -95,28 +100,6 @@ class QuestionViewController : UIViewController {
     
     
     
-    
-    
-    
-    /*
-    if let questionPlistPath = NSBundle.mainBundle().pathForResource("Heros", ofType: "plist") {
-    //println(heroPlistPath)
-    if let questionPlistData = NSData(contentsOfFile: questionPlistPath) {
-    if let questionRosterArray =  NSPropertyListSerialization.propertyListWithData(heroPlistData, options: NSPropertyListReadOptions(), format: nil, error: nil) as? Array<Dictionary<String, AnyObject>> {
-    //println(heroRosterArray)
-    self.questionRosterArray = heroRosterArray
-    
-    }
-    }
-    }
-    */
-    // var text1 = questionText.text
-    
-    // text1.text = QuestionsArray["Name"] as? String ?? "MissingNo."
-    
-    
-    
-    
      override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -124,16 +107,14 @@ class QuestionViewController : UIViewController {
             println(questionsPlistPath)
             if let questionPlistPath = NSData(contentsOfFile: questionsPlistPath) {
                 if let questionRosterArray = NSPropertyListSerialization.propertyListWithData(questionPlistPath, options: NSPropertyListReadOptions(), format: nil, error: nil) as? Array<Dictionary<String, AnyObject>>{
-                    println(questionRosterArray)
+                    println(questionRosterArray[1])
+                    self.questionRosterArray = questionRosterArray
                 }
             }
         }
         
         
-        
-        
-        
-        
+    
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("result"), userInfo: nil, repeats: true)
         
     }
