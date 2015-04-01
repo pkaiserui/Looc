@@ -34,8 +34,13 @@ class QuestionViewController : UIViewController {
     var questionRosterArray:(Array<Dictionary<String, AnyObject>>)! = []
     
     
+    /* Random Question Select
+    var myArray = [1,2,3,4,5,6]
     
+    var countArray = UInt32(myArray.count)
     
+    let diceRoll = (arc4random_uniform(countArray)+1)
+    */
     
     
     
@@ -43,7 +48,25 @@ class QuestionViewController : UIViewController {
         answerOneText.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
         
         //NSDictionary *section1 = [sectionDictionary objectForKey:@"Section1"];
-        //questionText.text = "\(questionRosterArray[1] <String:>())"
+        
+        // Overall Array Item
+        var item = questionRosterArray[0] as Dictionary<String, AnyObject>
+        
+        // Picture Name
+        var picturename = item["PictureName"] as String
+        
+        // Question add \(#) in place of Question - #
+        var question = (item["Question - 1"] as Dictionary<String, AnyObject>)
+        // String for the Question
+        var Q = question["Q"] as String
+        // String for 1 - 6 Answers
+        var A = question["A"] as Array<String>
+        
+        // Text for Question
+        questionText.text = "\(Q)"
+        
+        
+        //questionText.text = String(questionRosterArray[0]["PictureName"] )
         
       
     }
@@ -107,7 +130,7 @@ class QuestionViewController : UIViewController {
             println(questionsPlistPath)
             if let questionPlistPath = NSData(contentsOfFile: questionsPlistPath) {
                 if let questionRosterArray = NSPropertyListSerialization.propertyListWithData(questionPlistPath, options: NSPropertyListReadOptions(), format: nil, error: nil) as? Array<Dictionary<String, AnyObject>>{
-                    println(questionRosterArray[1])
+                    println(questionRosterArray[0])
                     self.questionRosterArray = questionRosterArray
                 }
             }

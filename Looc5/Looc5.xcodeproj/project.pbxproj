@@ -20,6 +20,7 @@
 		84A8BF081AC2155C001ADB10 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8BF071AC2155C001ADB10 /* MoreViewController.swift */; };
 		84A8BF0C1AC2212B001ADB10 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8BF0B1AC2212B001ADB10 /* ImageViewController.swift */; };
 		84A8BF0E1AC22174001ADB10 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8BF0D1AC22174001ADB10 /* QuestionsViewController.swift */; };
+		84D7BBEA1ACBA50C00E70AA8 /* ImageQuestionAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7BBE91ACBA50C00E70AA8 /* ImageQuestionAnswer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		84A8BF071AC2155C001ADB10 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		84A8BF0B1AC2212B001ADB10 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		84A8BF0D1AC22174001ADB10 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		84D7BBE91ACBA50C00E70AA8 /* ImageQuestionAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageQuestionAnswer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				841086BE1ABB8BE4008FEBFA /* Supporting Files */,
 				84A8BF0B1AC2212B001ADB10 /* ImageViewController.swift */,
 				84A8BF0D1AC22174001ADB10 /* QuestionsViewController.swift */,
+				84D7BBE91ACBA50C00E70AA8 /* ImageQuestionAnswer.swift */,
 			);
 			path = Looc5;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D7BBEA1ACBA50C00E70AA8 /* ImageQuestionAnswer.swift in Sources */,
 				84A8BF041AC214DF001ADB10 /* PlayViewController.swift in Sources */,
 				841086C51ABB8BE4008FEBFA /* SecondViewController.swift in Sources */,
 				84A8BF0E1AC22174001ADB10 /* QuestionsViewController.swift in Sources */,
