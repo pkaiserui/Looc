@@ -44,14 +44,15 @@ class QuestionViewController : UIViewController {
     
     
     
+    
     @IBAction func answerOneButton(sender: UIButton) {
         answerOneText.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
         
-        // var question1 = ImageQuestionAnswer(Q: Q)
+         //var question1 = ImageQuestionAnswer(Q: Q)
         
-        // questionText.text = "\(question1)"
+         //questionText.text = "\(question1)"
         
-        /*
+        
         //NSDictionary *section1 = [sectionDictionary objectForKey:@"Section1"];
         
         // Overall Array Item
@@ -72,8 +73,8 @@ class QuestionViewController : UIViewController {
         questionText.text = "\(answer1)"
         
         
-        //questionText.text = String(questionRosterArray[0]["PictureName"] )
-        */
+        //questionText.text = String(questionRosterArray[0]["Q"] )
+        
       
     }
     

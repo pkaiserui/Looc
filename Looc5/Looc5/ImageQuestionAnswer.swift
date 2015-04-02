@@ -10,7 +10,9 @@ import UIKit
 
 
 
-class ImageQuestionAnswer  {
+class ImageQuestionAnswer: InterfaceData  {
+    
+   
     
     
     init (picturename:(String), Q:(String),A:(Array<String>)) {
